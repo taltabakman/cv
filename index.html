@@ -5,125 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tal Tabakman - CV</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
-            line-height: 1.4;
-            color: #333;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 40px;
-            background-color: #ffffff;
-        }
-
-        /* Print Optimization */
-        @media print {
-            body { margin: 0; padding: 20px; }
-            .mission-statement { background-color: #f8f9fa !important; -webkit-print-color-adjust: exact; }
-            a { text-decoration: none; color: #333; }
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            margin: 0;
-            color: #2c3e50;
-            letter-spacing: 1px;
-            font-size: 26pt;
-            text-transform: uppercase;
-        }
-
-        .contact-info {
-            font-size: 10pt;
-            margin-top: 8px;
-            color: #555;
-        }
-
-        h2 {
-            color: #2c3e50;
-            border-bottom: 1px solid #bdc3c7;
-            text-transform: uppercase;
-            font-size: 13pt;
-            margin-top: 22px;
-            margin-bottom: 10px;
-            letter-spacing: 0.5px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-weight: bold;
-            font-size: 11pt;
-            margin-top: 15px;
-        }
-
-        .mission-statement {
-            background-color: #f8f9fa;
-            border-left: 4px solid #2c3e50;
-            padding: 12px 18px;
-            margin: 10px 0;
-            font-style: italic;
-            font-size: 10pt;
-            line-height: 1.5;
-        }
-
-        .role-title {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            font-style: italic;
-            margin-top: 6px;
-            color: #444;
-            font-size: 10.5pt;
-        }
-
-        ul {
-            margin-top: 5px;
-            padding-left: 22px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            font-size: 10pt;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            font-size: 10pt;
-        }
-
-        .patent-item {
-            margin-bottom: 6px;
-            font-size: 9.5pt;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #000;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        .list-unstyled {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .list-unstyled li {
-            margin-bottom: 8px;
-            font-size: 10.5pt;
-        }
+        body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; line-height: 1.4; color: #333; max-width: 850px; margin: 40px auto; padding: 0 40px; background-color: #ffffff; }
+        @media print { body { margin: 0; padding: 20px; } .mission-statement { background-color: #f8f9fa !important; -webkit-print-color-adjust: exact; } a { text-decoration: none; color: #333; } }
+        header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; margin-bottom: 20px; }
+        h1 { margin: 0; color: #2c3e50; letter-spacing: 1px; font-size: 26pt; text-transform: uppercase; }
+        .contact-info { font-size: 10pt; margin-top: 8px; color: #555; }
+        h2 { color: #2c3e50; border-bottom: 1px solid #bdc3c7; text-transform: uppercase; font-size: 13pt; margin-top: 22px; margin-bottom: 10px; letter-spacing: 0.5px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; font-weight: bold; font-size: 11pt; margin-top: 15px; }
+        .mission-statement { background-color: #f8f9fa; border-left: 4px solid #2c3e50; padding: 12px 18px; margin: 10px 0; font-style: italic; font-size: 10pt; line-height: 1.5; }
+        .role-title { display: flex; justify-content: space-between; font-weight: bold; font-style: italic; margin-top: 6px; color: #444; font-size: 10.5pt; }
+        ul { margin-top: 5px; padding-left: 22px; }
+        li { margin-bottom: 5px; font-size: 10pt; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 10pt; }
+        .patent-item { margin-bottom: 6px; font-size: 9.5pt; }
+        .highlight { font-weight: bold; color: #000; }
+        a { color: #2980b9; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -141,93 +37,45 @@
     <p style="font-size: 10.5pt;">
         Software engineering leader with over 15 years of experience in R&D and organizational leadership. 
         <span class="highlight">Highly experienced in multi-tier management, overseeing a team of 5 engineering managers and their respective departments.</span> 
-        Expert in architecting large-scale systems and high-performance applications across web-based and desktop platforms. 
-        Dedicated to technical mentorship, high-level system design, and the implementation of practical agile processes to solve complex data challenges at scale.
+        Expert in architecting large-scale systems and high-performance applications.
     </p>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <div><strong>Languages & Frameworks:</strong> Java, Kotlin, Spring Boot, Python, C/C++, React</div>
-        <div><strong>Databases:</strong> SQL (Postgres, SQLite), NoSQL (MongoDB, ElasticSearch)</div>
-        <div><strong>Infrastructure:</strong> Kubernetes (K8s), RabbitMQ, Airflow</div>
-        <div><strong>Methodologies:</strong> Scrum, Kanban, and Squads</div>
-    </div>
 </section>
 
 <section>
     <h2>Professional Experience</h2>
 
-    <div class="job-header">
-        <span>FORETELLIX</span>
-        <span>Sept 2019 – Present</span>
-    </div>
-
+    <div class="job-header"><span>FORETELLIX</span><span>Sept 2019 – Present</span></div>
     <div class="mission-statement">
-        Our mission in Foretellix is to accelerate the safe and efficient deployment of automated driving systems by providing a 
-        comprehensive orchestration and verification platform. We bridge the gap between development and real-world safety by 
-        seamlessly integrating advanced simulation techniques with large-scale real-world data processing. 
+        Our mission in Foretellix is to accelerate the safe and efficient deployment of automated driving systems... 
         <strong>As one of the company's first employees, I have been instrumental in shaping this vision and building the foundations of our technology from the ground up.</strong>
     </div>
 
-    <div class="role-title">
-        <span>Senior Director of Software Engineering</span>
-        <span>Dec 2023 – Present</span>
-    </div>
+    <div class="role-title"><span>Senior Director of Software Engineering</span><span>Dec 2023 – Present</span></div>
     <ul>
-        <li>Lead a global, multi-tier engineering organization of 30 engineers, <span class="highlight">directly managing 5 Engineering Managers</span> across Israel, India, Brazil, the US, and Europe.</li>
-        <li>Remain selectively hands-on (~20%) in technical leadership, guiding the architectural roadmap for large-scale data processing and analytics systems.</li>
-        <li>Drive day-to-day execution by structuring teams into Squads and applying Scrum/Kanban practices.</li>
-        <li>Collaborate with Product and R&D stakeholders to ensure delivery aligns with customer needs and roadmap priorities.</li>
+        <li>Lead a global, multi-tier engineering organization of 30 engineers, <span class="highlight">directly managing 5 Engineering Managers</span>.</li>
+        <li>Remain selectively hands-on (~20%) in technical leadership and architectural roadmap guidance.</li>
     </ul>
 
-    <div class="role-title">
-        <span>Director of Software Engineering</span>
-        <span>Sept 2019 – Dec 2023</span>
-    </div>
-    <ul>
-        <li>Managed two R&D teams focused on web-based data analysis platforms and custom customer services.</li>
-        <li>Led the development of a client-server architecture using React, Kotlin, and Spring Boot.</li>
-        <li>Implemented system infrastructure utilizing Kubernetes (K8s) and RabbitMQ.</li>
-        <li>Acted as Product Manager for the data analysis tool to align technical work with user requirements.</li>
-    </ul>
-
-    <div class="job-header" style="margin-top: 20px;">
-        <span>CADENCE DESIGN SYSTEMS</span>
-        <span>Nov 2005 – Sept 2019</span>
-    </div>
-
+    <div class="job-header" style="margin-top: 20px;"><span>CADENCE DESIGN SYSTEMS</span><span>Nov 2005 – Sept 2019</span></div>
     <div class="mission-statement">
         Our mission at Cadence was to develop an innovative debug platform for hardware designers and verification engineers which helped them to reduce debugging time.
     </div>
+    <div class="role-title"><span>Software Engineering Director</span><span>July 2016 – Sept 2019</span></div>
+    <ul><li>Managed a multi-tier organization of 30 engineers, including direct management of 4 Team Leaders.</li></ul>
+</section>
 
-    <div class="role-title">
-        <span>Software Engineering Director</span>
-        <span>July 2016 – Sept 2019</span>
-    </div>
-    <ul>
-        <li>Managed a multi-tier organization of 30 engineers, including direct management of a Software Architect and 4 Team Leaders.</li>
-        <li>Responsible for the development of a Java/C-based debug platform for hardware designers.</li>
-        <li>Maintained an organized Agile Scrum process and stayed 25% hands-on with design and profiling.</li>
-    </ul>
+<section>
+    <h2>US Patents</h2>
+    <div class="patent-item"><strong>10,546,080:</strong> Causes of failure in simulation runs using machine learning (2020)</div>
+    <div class="patent-item"><strong>10,176,078:</strong> Debugging process (2019)</div>
+    <div class="patent-item"><strong>9,928,328:</strong> Automated debugging of a device under test (2018)</div>
+</section>
 
-    <div class="role-title">
-        <span>Backend Team Leader</span>
-        <span>April 2009 – June 2016</span>
-    </div>
+<section>
+    <h2>Education & Publications</h2>
     <ul>
-        <li>Led 3–10 engineers developing a backend for a complex <span class="highlight">Java and C-based system</span>.</li>
-        <li>Developed a high-performance backend using SQLite to manage large-scale datasets.</li>
-        <li>Balanced 70% hands-on development with team management and project planning.</li>
-    </ul>
-
-    <div class="role-title">
-        <span>Software Engineer</span>
-        <span>Nov 2005 – March 2009</span>
-    </div>
-    <ul>
-        <li>Contributed to the design and development of core debugging features and data visualization tools using C and Java.</li>
+        <li><strong>MSc Bioinformatics (Cum Laude)</strong> – The Hebrew University of Jerusalem | 2005 – 2007</li>
+        <li><strong>BSc Computer Science & Computational Biology</strong> – The Hebrew University of Jerusalem | 2001 – 2004</li>
     </ul>
 </section>
 
@@ -242,25 +90,6 @@
     </div>
     <ul>
         <li>Served as second-in-command of a combat company (100+ personnel).</li>
-    </ul>
-</section>
-
-<section>
-    <h2>US Patents</h2>
-    <div class="patent-item"><strong>10,546,080:</strong> Method and system for identifying potential causes of failure in simulation runs using machine learning (2020)</div>
-    <div class="patent-item"><strong>10,176,078:</strong> Debugging process (2019)</div>
-    <div class="patent-item"><strong>9,928,328:</strong> Method and system for automated debugging of a device under test (2018)</div>
-    <div class="patent-item"><strong>9,280,627:</strong> GUI based verification at multiple abstraction levels (2016)</div>
-    <div class="patent-item"><strong>9,244,814:</strong> Enriched Log Viewer (2016)</div>
-    <div class="patent-item"><strong>8,935,673:</strong> Method for replacing conditional breakpoints in reverse debuggers (2015)</div>
-</section>
-
-<section>
-    <h2>Education & Publications</h2>
-    <ul class="list-unstyled">
-        <li><strong>MSc Bioinformatics (Cum Laude)</strong> – The Hebrew University of Jerusalem | 2005 – 2007</li>
-        <li><strong>BSc Computer Science & Computational Biology</strong> – The Hebrew University of Jerusalem | 2001 – 2004</li>
-        <li><strong>Publication:</strong> "Constructing ensembles of flexible fragments in native proteins...", Proteins Journal, 2007</li>
     </ul>
 </section>
 
