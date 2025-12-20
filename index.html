@@ -3,102 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tal Tabakman - Senior Director of Software Engineering</title>
+    <title>Tal Tabakman | Senior Director of Software Engineering</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #f4f7f6; }
-        header { border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: #2c3e50; font-size: 2.5em; }
-        h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
-        h3 { margin-bottom: 5px; color: #34495e; }
-        .contact { color: #7f8c8d; font-size: 0.9em; margin-top: 5px; }
-        .experience-item { margin-bottom: 30px; }
-        .date { float: right; color: #7f8c8d; font-style: italic; font-size: 0.9em; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .patent-item { margin-bottom: 15px; font-size: 0.95em; }
-        @media (max-width: 600px) { .date { float: none; display: block; margin-top: 5px; } .skills-grid { grid-template-columns: 1fr; } }
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --text: #333;
+            --light-text: #7f8c8d;
+            --bg: #f8f9fa;
+        }
+
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            color: var(--text); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 60px 20px; 
+            background: var(--bg); 
+        }
+
+        .cv-container {
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        header { 
+            border-bottom: 3px solid var(--primary); 
+            padding-bottom: 30px; 
+            margin-bottom: 40px; 
+        }
+
+        h1 { 
+            margin: 0; 
+            color: var(--primary); 
+            font-size: 2.8em; 
+            letter-spacing: -1px;
+        }
+
+        h2 { 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            font-size: 1.1em; 
+            letter-spacing: 2px;
+            margin-top: 40px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            background: #fcfcfc;
+        }
+
+        h3 { margin-bottom: 5px; color: var(--secondary); font-size: 1.2em; }
+
+        .contact { color: var(--light-text); font-size: 0.95em; margin-top: 10px; }
+
+        .experience-item { margin-bottom: 35px; position: relative; }
+
+        .date { 
+            float: right; 
+            color: var(--accent); 
+            font-weight: 600;
+            font-size: 0.9em; 
+        }
+
+        ul { padding-left: 20px; margin-top: 10px; }
+
+        li { margin-bottom: 10px; }
+
+        .skills-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+            margin-top: 15px;
+        }
+
+        .skill-cat { 
+            font-size: 0.95em; 
+            padding: 10px;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+        }
+
+        .patent-item { 
+            margin-bottom: 15px; 
+            padding: 10px;
+            border-bottom: 1px solid #f1f1f1;
+            font-size: 0.95em; 
+        }
+
+        .patent-number { font-weight: bold; color: var(--accent); margin-right: 8px; }
+
+        @media (max-width: 600px) { 
+            body { padding: 20px 10px; }
+            .cv-container { padding: 20px; }
+            .date { float: none; display: block; margin-bottom: 5px; } 
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Tal Tabakman</h1>
-    <div class="contact">
-        Senior Director of Software Engineering | Tel Aviv, Israel | tal.tabakman@gmail.com | +972-54-8123341
-    </div>
-</header>
-
-<section>
-    <h2>Profile</h2>
-    [cite_start]<p>Software engineering leader with over 15 years of experience in R&D and organizational leadership [cite: 9, 19-21]. <strong>Highly experienced in multi-tier management, overseeing both engineering managers and individual contributors.</strong> Expert in building large-scale systems using Java, Kotlin, and C++ for autonomous vehicle safety and hardware verification. Focus on technical mentorship, high-level architecture, and practical agile processes to solve complex data problems.</p>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <div>
-            <strong>Languages & Frameworks</strong>: Java, Kotlin, Spring Boot, C/C++, Python, React.
+<div class="cv-container">
+    <header>
+        <h1>Tal Tabakman</h1>
+        <div class="contact">
+            Senior Director of Software Engineering &nbsp;|&nbsp; Tel Aviv, Israel &nbsp;|&nbsp; tal.tabakman@gmail.com &nbsp;|&nbsp; +972-54-8123341
         </div>
-        <div>
-            <strong>Infrastructure</strong>: K8s, RabbitMQ, Airflow, Postgres, MongoDB, ElasticSearch.
+    </header>
+
+    <section>
+        <h2>Executive Profile</h2>
+        <p>Software engineering leader with over 15 years of experience in R&D and organizational leadership. <strong>Highly experienced in multi-tier management, overseeing both engineering managers and individual contributors.</strong> Expert in building large-scale systems using Java, Kotlin, and C++ for autonomous vehicle safety and hardware verification. Focus on technical mentorship, high-level architecture, and practical agile processes to solve complex data problems.</p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-cat"><strong>Languages</strong><br>Java, Kotlin, Spring Boot, C/C++, Python, React</div>
+            <div class="skill-cat"><strong>Infrastructure</strong><br>K8s, RabbitMQ, Airflow, Postgres, MongoDB, ElasticSearch</div>
+            <div class="skill-cat"><strong>Methodologies</strong><br>Scrum, Kanban, and Squads</div>
+            <div class="skill-cat"><strong>Domain</strong><br>Hardware Verification, Autonomous Vehicle Safety</div>
         </div>
-        <div>
-            <strong>Methodologies</strong>: Scrum, Kanban, and Squads.
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <span class="date">Dec 2023 – Present</span>
+            <h3>Senior Director of Software Engineering | Foretellix</h3>
+            <ul>
+                <li>Lead a global, multi-tier engineering organization of 30 engineers, managing a team of Engineering Managers and Team Leads across Israel, India, Brazil, the US, and Europe.</li>
+                <li>Maintain 20% hands-on involvement in technical leadership, specifically defining the architectural roadmap and designing core safety platforms for scale and performance.</li>
+                <li>Define the architectural roadmap for high-scale data processing systems utilizing Airflow and Kubernetes.</li>
+                <li>Drive organizational efficiency by structuring teams into Squads and implementing Scrum and Kanban at scale.</li>
+            </ul>
         </div>
-        <div>
-            [cite_start]<strong>Domain</strong>: Hardware Verification, Autonomous Vehicle Safety Assurance [cite: 27-28, 45].
+
+        <div class="experience-item">
+            <span class="date">Sept 2019 – Dec 2023</span>
+            <h3>Director of Software Engineering | Foretellix</h3>
+            <ul>
+                <li>Managed two R&D teams: one focused on web-based data management and another on custom applications.</li>
+                <li>Led the development of a client-server architecture using React, Kotlin, and Spring Boot.</li>
+                <li>Implemented system infrastructure utilizing Kubernetes (K8s) and RabbitMQ.</li>
+                <li>Acted as the product manager for the data management tool to align technical work with user requirements.</li>
+            </ul>
         </div>
-    </div>
-</section>
 
-<section>
-    <h2>Experience</h2>
-    
-    <div class="experience-item">
-        <span class="date">Dec 2023 – Present</span>
-        <h3>Senior Director of Software Engineering | Foretellix</h3>
-        <ul>
-            <li>Lead a global, multi-tier engineering organization of 30 engineers, managing a team of Engineering Managers and Team Leads across Israel, India, Brazil, the US, and Europe.</li>
-            <li>Maintain hands-on involvement in technical leadership (approx. 20%), focusing on system architecture, scale, and performance profiling.</li>
-            <li>Define the architectural roadmap for high-scale data processing systems utilizing Airflow and Kubernetes.</li>
-            <li>Drive organizational efficiency by structuring teams into Squads and implementing Scrum and Kanban at scale.</li>
-        </ul>
-    </div>
+        <div class="experience-item">
+            <span class="date">July 2016 – Sept 2019</span>
+            <h3>Software Engineering Director | Cadence Design Systems</h3>
+            <ul>
+                <li>Managed a multi-tier organization of 30 engineers, including direct management of a Software Architect and 4 Team Leaders.</li>
+                <li>Responsible for the development of a Java/C-based debug platform for hardware designers.</li>
+                <li>Maintained an organized Agile Scrum process and stayed 25% hands-on with design and profiling.</li>
+            </ul>
+        </div>
 
-    <div class="experience-item">
-        <span class="date">Sept 2019 – Dec 2023</span>
-        <h3>Director of Software Engineering | Foretellix</h3>
-        <ul>
-            [cite_start]<li>Managed two R&D teams: one focused on web-based data management and another on custom applications [cite: 42-43, 51-52].</li>
-            <li>Led the development of a client-server architecture using React, Kotlin, and Spring Boot.</li>
-            <li>Implemented system infrastructure utilizing Kubernetes and RabbitMQ.</li>
-        </ul>
-    </div>
+        <div class="experience-item">
+            <span class="date">April 2009 – June 2016</span>
+            <h3>Backend Team Leader | Cadence Design Systems</h3>
+            <ul>
+                <li>Led 3–10 engineers developing a backend for a complex Spring Boot and C-based system.</li>
+                <li>Developed a high-performance backend using SQLite to manage large datasets.</li>
+                <li>Balanced 70% hands-on development with team management and project planning.</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="experience-item">
-        <span class="date">July 2016 – Sept 2019</span>
-        <h3>Software Engineering Director | Cadence Design Systems</h3>
-        <ul>
-            <li>Managed a multi-tier organization of 30 engineers, including direct management of a Software Architect and 4 Team Leaders.</li>
-            <li>Responsible for the development of a Java/C-based debug platform for hardware designers.</li>
-            <li>Maintained an organized Agile Scrum process and stayed 25% hands-on with design and profiling.</li>
-        </ul>
-    </div>
-</section>
+    <section>
+        <h2>US Patents</h2>
+        <div class="patent-item"><span class="patent-number">10,546,080</span> Method and system for identifying potential causes of failure in simulation runs using machine learning.</div>
+        <div class="patent-item"><span class="patent-number">10,176,078</span> Debugging process.</div>
+        <div class="patent-item"><span class="patent-number">9,928,328</span> Method and system for automated debugging of a device under test.</div>
+        <div class="patent-item"><span class="patent-number">9,280,627</span> GUI based verification at multiple abstraction levels.</div>
+        <div class="patent-item"><span class="patent-number">9,244,814</span> Enriched Log Viewer.</div>
+        <div class="patent-item"><span class="patent-number">8,935,673</span> Method for replacing conditional breakpoints in reverse debuggers.</div>
+    </section>
 
-<section>
-    <h2>Patents</h2>
-    <div class="patent-item"><strong>US 10,546,080</strong>: ML-based identification of failure causes in simulation runs (2020).</div>
-    [cite_start]<div class="patent-item"><strong>US 10,176,078</strong>: Debugging process (2019) [cite: 68-69].</div>
-    <div class="patent-item"><strong>US 9,928,328</strong>: Automated debugging of a device under test (2018).</div>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <p><strong>MSc Bioinformatics (Cum Laude)</strong> | The Hebrew University of Jerusalem<br>
-    <strong>BSc Computer Science & Computational Biology</strong> | The Hebrew University of Jerusalem</p>
-</section>
+    <section>
+        <h2>Education & Publications</h2>
+        <p><strong>MSc Bioinformatics (Cum Laude)</strong> | The Hebrew University of Jerusalem<br>
+        <strong>BSc Computer Science & Computational Biology</strong> | The Hebrew University of Jerusalem</p>
+        <p style="font-style: italic; color: var(--light-text); font-size: 0.9em;">
+            Publication: Noy E. Tabakman T and Goldblum A, "Constructing ensembles of flexible fragments in native proteins...", Proteins Journal, 2007.
+        </p>
+    </section>
+</div>
 
 </body>
 </html>
