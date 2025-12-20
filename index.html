@@ -5,87 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tal Tabakman - CV</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Segoe UI', Calibri, Arial, sans-serif;
-            line-height: 1.5;
+            line-height: 1.4;
             color: #333;
-            max-width: 900px;
+            max-width: 850px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 40px;
+            background-color: #ffffff;
         }
+
+        /* Print Optimization */
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .mission-statement { background-color: #f8f9fa !important; -webkit-print-color-adjust: exact; }
+            a { text-decoration: none; color: #333; }
+        }
+
         header {
             text-align: center;
             border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             margin-bottom: 20px;
         }
+
         h1 {
             margin: 0;
             color: #2c3e50;
             letter-spacing: 1px;
-            font-size: 28pt;
+            font-size: 26pt;
+            text-transform: uppercase;
         }
+
         .contact-info {
             font-size: 10pt;
-            margin-top: 5px;
+            margin-top: 8px;
+            color: #555;
         }
+
         h2 {
             color: #2c3e50;
             border-bottom: 1px solid #bdc3c7;
             text-transform: uppercase;
-            font-size: 14pt;
-            margin-top: 25px;
+            font-size: 13pt;
+            margin-top: 22px;
             margin-bottom: 10px;
+            letter-spacing: 0.5px;
         }
-        h3 {
-            margin-bottom: 5px;
-            font-size: 12pt;
-            color: #34495e;
-        }
+
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             font-weight: bold;
+            font-size: 11pt;
+            margin-top: 15px;
         }
+
         .mission-statement {
             background-color: #f8f9fa;
             border-left: 4px solid #2c3e50;
-            padding: 10px 15px;
+            padding: 12px 18px;
             margin: 10px 0;
             font-style: italic;
-            font-size: 10.5pt;
+            font-size: 10pt;
+            line-height: 1.5;
         }
+
         .role-title {
             display: flex;
             justify-content: space-between;
             font-weight: bold;
             font-style: italic;
-            margin-top: 8px;
-        }
-        ul {
-            margin-top: 5px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 4px;
+            margin-top: 6px;
+            color: #444;
             font-size: 10.5pt;
         }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 10pt;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .patent-item {
-            margin-bottom: 8px;
+            gap: 8px;
             font-size: 10pt;
         }
+
+        .patent-item {
+            margin-bottom: 6px;
+            font-size: 9.5pt;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #000;
+        }
+
         a {
             color: #2980b9;
             text-decoration: none;
         }
-        .highlight {
-            font-weight: bold;
+
+        .education-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .education-list li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -101,7 +137,7 @@
 
 <section>
     <h2>Executive Profile</h2>
-    <p>
+    <p style="font-size: 10.5pt;">
         Software engineering leader with over 15 years of experience in R&D and organizational leadership. 
         <span class="highlight">Highly experienced in multi-tier management, overseeing a team of 5 engineering managers and their respective departments.</span> 
         Expert in architecting large-scale systems and high-performance applications across web-based and desktop platforms. 
@@ -150,7 +186,7 @@
         <span>Sept 2019 – Dec 2023</span>
     </div>
     <ul>
-        <li>Managed two R&D teams focused on web-based data analysis platforms and customer services.</li>
+        <li>Managed two R&D teams focused on web-based data analysis platforms and custom customer services.</li>
         <li>Led the development of a client-server architecture using React, Kotlin, and Spring Boot, utilizing SQL and NoSQL for high-volume data storage.</li>
         <li>Implemented system infrastructure utilizing Kubernetes (K8s) and RabbitMQ.</li>
         <li>Acted as Product Manager for the data analysis tool to align technical work with user requirements.</li>
@@ -159,6 +195,10 @@
     <div class="job-header" style="margin-top: 20px;">
         <span>CADENCE DESIGN SYSTEMS</span>
         <span>April 2009 – Sept 2019</span>
+    </div>
+
+    <div class="mission-statement">
+        Our mission at Cadence was to develop an innovative debug platform for hardware designers and verification engineers which helped them to reduce debugging time.
     </div>
 
     <div class="role-title">
@@ -176,7 +216,7 @@
         <span>April 2009 – June 2016</span>
     </div>
     <ul>
-        <li>Led 3–10 engineers developing a backend for a complex Spring Boot and C-based system.</li>
+        <li>Led 3–10 engineers developing a backend for a complex <span class="highlight">Java and C-based system</span>.</li>
         <li>Developed a high-performance backend using SQLite to manage large-scale datasets.</li>
         <li>Balanced 70% hands-on development with team management and project planning.</li>
     </ul>
@@ -184,20 +224,20 @@
 
 <section>
     <h2>US Patents</h2>
-    <div class="patent-item"><strong>10,546,080: Method and system for identifying potential causes of failure in simulation runs using machine learning</strong> (2020)</div>
-    <div class="patent-item"><strong>10,176,078: Debugging process</strong> (2019)</div>
-    <div class="patent-item"><strong>9,928,328: Method and system for automated debugging of a device under test</strong> (2018)</div>
-    <div class="patent-item"><strong>9,280,627: GUI based verification at multiple abstraction levels</strong> (2016)</div>
-    <div class="patent-item"><strong>9,244,814: Enriched Log Viewer</strong> (2016)</div>
-    <div class="patent-item"><strong>8,935,673: Method for replacing conditional breakpoints in reverse debuggers</strong> (2015)</div>
+    <div class="patent-item"><strong>10,546,080:</strong> Method and system for identifying potential causes of failure in simulation runs using machine learning (2020)</div>
+    <div class="patent-item"><strong>10,176,078:</strong> Debugging process (2019)</div>
+    <div class="patent-item"><strong>9,928,328:</strong> Method and system for automated debugging of a device under test (2018)</div>
+    <div class="patent-item"><strong>9,280,627:</strong> GUI based verification at multiple abstraction levels (2016)</div>
+    <div class="patent-item"><strong>9,244,814:</strong> Enriched Log Viewer (2016)</div>
+    <div class="patent-item"><strong>8,935,673:</strong> Method for replacing conditional breakpoints in reverse debuggers (2015)</div>
 </section>
 
 <section>
     <h2>Education & Publications</h2>
-    <ul>
-        <li><strong>MSc Bioinformatics (Cum Laude)</strong>: The Hebrew University of Jerusalem</li>
-        <li><strong>BSc Computer Science & Computational Biology</strong>: The Hebrew University of Jerusalem</li>
-        <li><strong>Publication</strong>: "Constructing ensembles of flexible fragments in native proteins...", Proteins Journal, 2007</li>
+    <ul class="education-list">
+        <li><strong>MSc Bioinformatics (Cum Laude)</strong> – The Hebrew University of Jerusalem</li>
+        <li><strong>BSc Computer Science & Computational Biology</strong> – The Hebrew University of Jerusalem</li>
+        <li><strong>Publication:</strong> "Constructing ensembles of flexible fragments in native proteins...", Proteins Journal, 2007</li>
     </ul>
 </section>
 
